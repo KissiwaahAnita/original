@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            transition: 200ms;
+            right: -90rem;
+            background-color: gold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            /* border-radius: ; */
+        }
+
+        nav:hover{
+            transition: 200ms;
+            background-color: gold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            /* border-radius: ; */
+            transform: translateX(-90rem);
+        }
+        @media screen and (max-width: 650px){
+                nav{
+                transition: 100ms;
+                background-color: gold;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                right: -30rem;
+                width: 100%;
+                height: 50px;
+                }
+
+                nav:hover{
+                    transition: 200ms;
+                    background-color: gold;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: fixed;
+                    width: 100%;
+                    height: 50px;
+                    /* border-radius: ; */
+                    transform: translateX(-30rem);
+                }
+                nav ul li:not(.dropdown) {
+                    display: none;
+                }
+                nav ul .dropdown{
+                    display: block;
+                }
+                
+            }
+           
+
+        Nav ul{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        nav ul li:active{
+            background-color:black ;
+            display: flex;
+            width: 20%;
+        }
+        
+        nav img{
+            border-radius: 45%;
+        }
+        .dropdown{
+        display: none;
+         }
+       
+            
+        
+    </style>
+    
+    
+</head>
+<body>
+    <nav>
+        <!-- <h2>Logo</h2> -->
+        <img src="image/f7ad55425dd44209b217e86a588bce25.jpg" width="5%" height="50px">
+        <ul>
+            <li>Home <span class="fa fa-home"></span></li>
+            <li>Contact <span class="fa fa-users-cog"></span></li>
+            <li>About us <span class="fa fa-user-check"></span></li>
+            <li>Promo <span class="fa fa-surprise"></span></li>
+            <li class="dropdown"><i class="fa fa-caret-down"></i>dropdown</li>
+        </ul>
+    </nav>
+</body>
+</html>

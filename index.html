@@ -16,7 +16,7 @@
         nav{
             transition: 200ms;
             right: -90rem;
-            background-color: gold;
+            background-color: wheat;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -28,7 +28,7 @@
 
         nav:hover{
             transition: 200ms;
-            background-color: gold;
+            background-color: wheat;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,7 +41,7 @@
         @media screen and (max-width: 650px){
                 nav{
                 transition: 100ms;
-                background-color: gold;
+                background-color: wheat;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -53,7 +53,7 @@
 
                 nav:hover{
                     transition: 200ms;
-                    background-color: gold;
+                    background-color: wheat;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -89,7 +89,48 @@
         }
         .dropdown{
         display: none;
+         } 
+
+         @media screen and(max-width :650px){
+            nav{
+                transition: 200ms;
+            right: -90rem;
+            background-color: wheat;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 50px;
+
+            }
+            
          }
+         header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.5);
+            font-size: 1.5em;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./picture/picture.jpg);
+            background-size: cover;
+            height:calc(100vh - 100px);
+            color: white;
+            
+         }
+
+         button{
+            border: none;
+            box-shadow: none;
+            font-size: 20px;
+            color: black;
+
+         }
+        
+         
+        
+
        
             
         
@@ -102,12 +143,26 @@
         <!-- <h2>Logo</h2> -->
         <img src="image/f7ad55425dd44209b217e86a588bce25.jpg" width="5%" height="50px">
         <ul>
-            <li>Home <span class="fa fa-home"></span></li>
-            <li>Contact <span class="fa fa-users-cog"></span></li>
-            <li>About us <span class="fa fa-user-check"></span></li>
-            <li>Promo <span class="fa fa-surprise"></span></li>
+            <li><span class="fa fa-home"></span></li>
+            <li><span class="fa fa-users-cog"></span></li>
+            <li><span class="fa fa-user-check"></span></li>
+            <li><span class="fa fa-surprise"></span></li>
             <li class="dropdown"><i class="fa fa-caret-down"></i>dropdown</li>
         </ul>
     </nav>
+    <header>
+        <h1>MY NEW WEBSITE PAGE</h1>
+        <button>Get Started</button>
+        <div>
+        <input type="email" placeholder="Enter email">
+        <input style="background-color:#221a57; height: 20px;" type="button" value="Subscribe">
+        </div>
+    </header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,<br> in maiores ipsa deleniti reprehenderit possimus perspiciatis quia culpa magni vitae quibusdam esse veniam sunt blanditiis repellendus eligendi beatae necessitatibus non et libero amet nobis doloremque. Incidunt doloremque ea ipsam quis eius alias recusandae aliquid nihil pariatur nam? Voluptas,<br> ducimus quaerat!</p>
+    <footer>
+        <h5 style="background-color: #F5DEB3; height: 40px; text-align: center; padding: 1em; color: black;">my website page copyright&copy;</h5>
+    </footer>
+    
+   
 </body>
 </html>
